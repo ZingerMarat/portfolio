@@ -6,6 +6,19 @@
     font-family: 'Poppins', sans-serif;
 */
 
+:root{
+    --black: #171718;
+    --black-border: #171718;
+    --white: #fff;
+    --purple: #5c62ec;
+
+    --dark-bg: var(--black);
+    --dark-border: var(--black-border);
+    --header-text: var(--white);
+    --accent: var(--purple);
+
+}
+
 html, body {
     font-family: 'DM Sans', sans-serif;
 
@@ -20,9 +33,9 @@ html, body {
 /* Nav */
 .nav {
     padding: 20px 0;
-    border-bottom: 1px solid #26292D;
-    background-color: #171718;
-    color: #fff;
+    border-bottom: 1px solid var(--dark-border);
+    background-color: var(--dark-bg);
+    color: var(--header-text);
 }
 
 .nav-row {
@@ -35,7 +48,7 @@ html, body {
 }
 
 .logo {
-    color: #fff;
+    color: var(--header-text);
     align-items: baseline;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -56,7 +69,7 @@ html, body {
 }
 
 .nav-list__link {
-    color: #fff;
+    color: var(--header-text);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -72,9 +85,9 @@ html, body {
 .nav-list__link--active::before {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--accent);
 }
