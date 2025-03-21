@@ -40,5 +40,62 @@
             </div>
     </header>
 
+    <main class="section">
+        <div class="container">
+            <h2 class="title-1">Projects</h2>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const projects = document.querySelectorAll('.project');
+            
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('project--visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, {
+                        threshold: 0.3
+                    });
+            
+                    projects.forEach(project => observer.observe(project));
+                });
+            </script>
+            
+            <ul class="projects">
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/01.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Gaming streaming portal</h3>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/02.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Online store</h3>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/03.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Social network</h3>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/04.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Personal blog</h3>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/05.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Online courses</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
 </body>
 </html>
