@@ -26,12 +26,31 @@ html, body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5px;
     color: var(--text-color);
+    background-color: var(--black);
 }
+
+/* General */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title-1{
+    margin-bottom: 60px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--accent)
+}
+
+.title-2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
 }
 
 /* Nav */
@@ -207,23 +226,12 @@ html, body {
     top: 2px;
 }
 
-/* General */
-
 /* Projects */
 
 .section {
     padding: 70px 0;
     background-color: var(--dark-bg);
     color: var(--header-text);
-}
-
-.title-1{
-    margin-bottom: 60px;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1.3;
-    text-align: center;
-    color: var(--accent)
 }
 
 .projects{
@@ -304,6 +312,28 @@ html, body {
     line-height: 1.3;
 }
 
+/* Content list */
+
+.content-list{
+    margin: 0 auto;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+
+}
+
+.content-list__item{
+    font-size: 18px;
+    line-height: 1.5;   
+
+}
+
+.content-list__item p + p {
+    margin-top: 0.5em;
+}
 /* Footer */
 
 .footer{
