@@ -88,6 +88,8 @@ html, body {
 
 .nav-list{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     column-gap: 40px;
     align-items: center;
     font-size: 16px;
@@ -215,8 +217,6 @@ html, body {
     display: flex;
     column-gap: 10px;
     align-items: center;
-    
-
 }
 
 .btn-outline:hover {
@@ -240,6 +240,7 @@ html, body {
 .projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
 
@@ -294,7 +295,7 @@ html, body {
 }
 
 .about-project-wrapper{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 
@@ -313,6 +314,18 @@ html, body {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.3;
+}
+
+.project-details__tech_technologies{
+    color: var(--accent);
+    font-size: 30px;
+}
+
+.project-links{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Content list */
@@ -363,4 +376,79 @@ html, body {
     display: flex;
     column-gap: 30px;
     align-items: center ;
+}
+
+@media (max-width: 620px){
+    .header{
+        min-height: unset;
+    }
+    .header_title{
+        font-size: 30px;
+    }
+    .header_title strong{
+        font-size: 40px;
+    }
+    .btn{
+        height: 40px;
+        padding: 10px 25px;
+
+        font-size: 12px;
+        font-weight: 450;
+
+    }
+    .section{
+        padding: 40px 0;
+    }
+    .title-1{
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+    .title-2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .project__title{
+        font-size: 20px;
+    }
+    .footer{
+        padding: 30px 0 30px;
+    }
+    .footer__wrapper{
+        row-gap: 20px;
+    }
+    .social{
+        column-gap: 20px;
+    }
+    .social__item{
+        width: 30px;
+    }
+    .content-list{
+        row-gap: 20px;
+    }
+    .content-list__item{
+        font-size: 16px;
+    }
+    .content-list__item p + p {
+        margin-top: 0.3em;
+    }
+    .project-details__desc{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .project-details__tech{
+        font-size: 20px;
+    }
+    .project-details__cover{
+        margin-bottom: 40px;
+    }
+    .project-details__tech_technologies{
+        font-size: 24px;
+    }
+    .about-project-wrapper{
+        margin-bottom: 30px;
+    }
+    .btn-outline{
+        height: 40px;
+        padding: 24px 24px;
+    }
 }
